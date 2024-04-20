@@ -663,6 +663,9 @@ def snapshot(obj=undefined):
         else:
             return obj
 
+    if obj != undefined and not _update_flags.update and not _update_flags.fix and not _update_flags.trim:
+        return obj
+
     frame = inspect.currentframe().f_back.f_back
     expr = Source.executing(frame)
 
