@@ -1,8 +1,9 @@
 # Fork 
 
 This is a fork of [15r10nk/inline-snapshot](https://github.com/15r10nk/inline-snapshot) with the following changes:
-- If we are not in fix mode, first failed assertion will raise an exception. 
+- If we are only in create mode (which we are by default), we will raise an assertion if the snapshot is not equal to the expected value.
 
+---
 
 <!-- -8<- [start:Header] -->
 
