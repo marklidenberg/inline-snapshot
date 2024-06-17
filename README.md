@@ -1,7 +1,7 @@
 # Fork 
 
 This is a fork of [15r10nk/inline-snapshot](https://github.com/15r10nk/inline-snapshot) with the following changes:
-- If we are only in create mode (which we are by default), we will raise an assertion if the snapshot is not equal to the expected value.
+- When operating exclusively in create mode (the default setting), an assertion will be triggered if the snapshot does not match the expected value.
 
 ---
 
